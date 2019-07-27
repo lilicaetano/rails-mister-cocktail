@@ -1,0 +1,16 @@
+<h1><%= @cocktail.name.capitalize  %></h1>
+
+<ul>
+<%  @cocktail.doses.each do |dose| %>
+  <li><%= dose.ingredient.name %></li>
+  <%= dose.description %>
+  <%= link_to 'Remove ingredient', cocktail_dose_path(@cocktail, dose), method: :delete, data: { confirm: 'Are you sure?' } %>
+<% end %>
+</ul>
+<br />
+<br />
+<p><%= link_to 'Add ingredient', new_cocktail_dose_path(@cocktail) %></p>
+
+
+<p><%= link_to 'Edit', edit_cocktail_path(@cocktail) %></p>
+<p><%= link_to 'Back to list', cocktails_path %></p>
