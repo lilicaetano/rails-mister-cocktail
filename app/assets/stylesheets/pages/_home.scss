@@ -1,1 +1,84 @@
 // Specific CSS for your home-page
+.banner {
+  position: relative;
+}
+
+.banner img {
+    object-fit: cover;
+    object-position: right bottom;
+    width: 100vw;
+    max-height: 100vh;
+  }
+  .banner .banner-text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .banner h1 {
+    margin: 0;
+    color: white;
+    font-family: 'Special Elite', cursive;
+    font-size: 72px;
+    text-shadow: 1px 1px 3px black;
+    font-weight: bold;
+    padding-bottom: 0.1em;
+  }
+
+  .banner p {
+    margin: 0;
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    font-size: 52px;
+    text-shadow: 1px 1px 3px black;
+    font-weight: bold;  
+    padding-bottom: 1em;
+  }
+
+  .btn-cocktails {
+    color: white;
+    background: #6F1323;
+    padding: 8px 24px;
+    border-radius: 5px;
+    font-family: 'PT Serif', serif;
+    transition: transform 0.3s ease;
+  }
+  
+  .btn-cocktails:hover {
+    color: white;
+    transform: scale(1.02);
+  }
+
+  @media (max-width: 800px) and (min-width: 600px) { 
+    .banner h1 {
+      font-size: 20px;
+    }
+    .banner p {
+      font-size: 15px;
+    }
+    .btn-contact-home {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 600px) { 
+    .banner h1 {
+      font-size: 10px;
+    }
+    .banner p {
+      font-size: 10px;
+    }
+    .btn-contact-home {
+      font-size: 10px;
+    }
+  } 
+
+  .footer {
+    background:#6F1323;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    color:#DCCDBE;
+    text-align: right;
+  }  

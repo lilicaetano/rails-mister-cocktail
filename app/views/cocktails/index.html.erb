@@ -1,12 +1,38 @@
-<h1 class="text-center">Cocktails</h1>
-
-<div class="container text-center">
-  <% @cocktails.each do |cocktail| %>
-    <h2><%= link_to cocktail.name, cocktail %></h2>
-    <p><%= link_to 'Edit', edit_cocktail_path(cocktail) %></p>
-  <% end %>
+<div class="banner">
+  <img
+    sizes="100vw"
+    srcset="https://res.cloudinary.com/dwhyp7x92/image/upload/dpr_auto,f_auto,fl_progressive:semi,q_auto:best,g_south_west,ar_16:9,c_fill/q_70,w_256/v1584700018/Mister%20Cocktail/banner_gaphdu.jpg 256w,
+            https://res.cloudinary.com/dwhyp7x92/image/upload/dpr_auto,f_auto,fl_progressive:semi,q_auto:best,g_south_west,ar_16:9,c_fill/q_70,w_512/v1584700018/Mister%20Cocktail/banner_gaphdu.jpg 512w,
+            https://res.cloudinary.com/dwhyp7x92/image/upload/dpr_auto,f_auto,fl_progressive:semi,q_auto:best,g_south_west,ar_16:9,c_fill/q_70,w_768/v1584700018/Mister%20Cocktail/banner_gaphdu.jpg 768w,
+            https://res.cloudinary.com/dwhyp7x92/image/upload/dpr_auto,f_auto,fl_progressive:semi,q_auto:best,g_south_west,ar_16:9,c_fill/q_80,w_1024/v1584700018/Mister%20Cocktail/banner_gaphdu.jpg 1024w,
+            https://res.cloudinary.com/dwhyp7x92/image/upload/dpr_auto,f_auto,fl_progressive:semi,q_auto:best,g_south_west,ar_16:9,c_fill/q_80,w_1280/v1584700018/Mister%20Cocktail/banner_gaphdu.jpg 1280w,
+            https://res.cloudinary.com/dwhyp7x92/image/upload/dpr_auto,f_auto,fl_progressive:semi,q_auto:best,g_south_west,ar_16:9,c_fill/q_80,w_1536/v1584700018/Mister%20Cocktail/banner_gaphdu.jpg 1536w"
+    src="https://res.cloudinary.com/dwhyp7x92/image/upload/v1584700018/Mister%20Cocktail/banner_gaphdu.jpg"
+    alt="Cocktail bar"/>
+  <div class="margin banner-text">
+    <h1>The Mixologist</h1>
+    <p>Premium Cocktails</p>
+    <a id="cocktails" class="btn btn-cocktails" onclick="changeCocktails()" href="#cocktails" title="Cocktails">See cocktails</a>
+    <a><%= link_to 'Add new cocktail', new_cocktail_path, class: "btn btn-cocktails"%></a>
+  </div>
 </div>
+
+<div id="cocktails" class="cocktails">
+  <h1>Cocktails</h1>
+  <div class="container text-center">
+    <% @cocktails.each do |cocktail| %>
+      <h2><%= link_to cocktail.name, cocktail %></h2>
+      <p><%= link_to 'Edit', edit_cocktail_path(cocktail) %></p>
+    <% end %>
+  </div>
+</div>  
 <br />
 <br />
 
-<div class="text-center"><%= link_to 'New Cocktail', new_cocktail_path, class:"btn btn-primary" %></div>
+<a class="text-center"><%= link_to 'Add new cocktail', new_cocktail_path, class:"btn btn-primary" %></a>
+
+<div class="footer">
+    <div class="footer-copyright">
+        © 2020 Liliana Caetano. All rights reserved.
+    </div>
+</div>
