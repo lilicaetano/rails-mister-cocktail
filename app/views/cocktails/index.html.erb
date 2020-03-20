@@ -12,24 +12,45 @@
   <div class="margin banner-text">
     <h1>The Mixologist</h1>
     <p>Premium Cocktails</p>
-    <a id="cocktails" class="btn btn-cocktails" onclick="changeCocktails()" href="#cocktails" title="Cocktails">See cocktails</a>
-    <a><%= link_to 'Add new cocktail', new_cocktail_path, class: "btn btn-cocktails"%></a>
+    <a id="cocktails" class="btn btn-cocktails" onclick="changeCocktails()" href="#cocktails" title="Cocktails">See Cocktails</a>
+    <a><%= link_to 'Add New Cocktail', new_cocktail_path, class: "btn btn-cocktails"%></a>
   </div>
 </div>
 
 <div id="cocktails" class="cocktails">
-  <h1>Cocktails</h1>
-  <div class="container text-center">
-    <% @cocktails.each do |cocktail| %>
-      <h2><%= link_to cocktail.name, cocktail %></h2>
-      <p><%= link_to 'Edit', edit_cocktail_path(cocktail) %></p>
-    <% end %>
-  </div>
-</div>  
-<br />
-<br />
+  <h1>My Cocktails</h1>
 
-<a class="text-center"><%= link_to 'Add new cocktail', new_cocktail_path, class:"btn btn-primary" %></a>
+  <div class="container">
+    <div class="row">
+      <% @cocktails.each do |cocktail| %>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://source.unsplash.com/500x400/?cocktail');">
+            <div class="card-description">
+              <p><%= link_to cocktail.name, cocktail %></p>
+            </div> 
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+    <!-- <div class="cocktail-card">
+      <div class="container text-center">
+        <% @cocktails.each do |cocktail| %>
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://source.unsplash.com/500x400/?cocktail');">
+            <p><%= link_to cocktail.name, cocktail %></p>
+             <p><%= link_to 'Edit', edit_cocktail_path(cocktail) %></p> 
+          <% end %>
+        </div>  
+      </div>
+    </div>
+  </div>
+</div> --> 
+
+
+<a><%= link_to 'New Cocktail', new_cocktail_path, class: "btn btn-cocktails-1"%></a>
 
 <div class="footer">
     <div class="footer-copyright">

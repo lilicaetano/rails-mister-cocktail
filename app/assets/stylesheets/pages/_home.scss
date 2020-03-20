@@ -33,19 +33,41 @@
     font-size: 52px;
     text-shadow: 1px 1px 3px black;
     font-weight: bold;  
-    padding-bottom: 1em;
+    padding-bottom: 0.7em;
   }
 
   .btn-cocktails {
     color: white;
-    background: #6F1323;
+    background: linear-gradient(#6F1323, rgb(77, 13, 23));
+    border: 0px;
     padding: 8px 24px;
     border-radius: 5px;
     font-family: 'PT Serif', serif;
     transition: transform 0.3s ease;
+    margin-right: 15px;
+    margin-left: 15px;
   }
   
   .btn-cocktails:hover {
+    font-weight: bold;
+    color: white;
+    transform: scale(1.02);
+  }
+
+  .btn-cocktails-1 {
+    color: white;
+    background: linear-gradient(#6F1323, rgb(77, 13, 23));
+    border: 0px;
+    justify-content: center;
+    padding: 8px 24px;
+    border-radius: 5px;
+    font-family: 'PT Serif', serif;
+    transition: transform 0.3s ease;
+    margin: 5rem 5rem;
+  }
+  
+  .btn-cocktails-1:hover {
+    font-weight: bold;
     color: white;
     transform: scale(1.02);
   }
@@ -74,11 +96,45 @@
     }
   } 
 
+  .cocktails h1 {
+    color: #6F1323;
+    font-family: 'Great Vibes', cursive;
+    font-size: 52px;
+    margin: 5rem 5rem 5rem 5rem;
+  }
+
+  .card {
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  }
+
+  .card a {
+    color: white;
+    transform: scale(1.02);
+  } 
+
+  .card a:hover {
+    color: white;
+    font-weight: bold;
+    transform: scale(1.02);
+    text-decoration: none;
+  }
+
   .footer {
     background:#6F1323;
     align-items: center;
     justify-content: space-between;
     padding: 15px 20px;
-    color:#DCCDBE;
+    color:white;
     text-align: right;
   }  
