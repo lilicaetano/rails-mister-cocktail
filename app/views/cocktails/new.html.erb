@@ -1,17 +1,21 @@
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-      <h1>Create a new cocktail</h1>
-      <%= simple_form_for @cocktail do |f| %>
-        <%= f.input :name %>
-        <%= f.input :photo %>
-        <%= f.input :photo_cache, as: :hidden %>
-        <%#= f.input :ingredients %>
-        <%#= f.input :doses %>
-        <%#= f.input :description %>
-        <%= f.submit class: 'btn btn-primary' %>
-      <% end %>
+<div id="new-cocktail" class="new-cocktail">
+  <h1>Create a new cocktail</h1>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+     
+        <%= simple_form_for @cocktail do |f| %>
+          <%= f.input :name %>
+          <%= f.input :ingredients %>
+          <%= f.input :photo %>
+          <%= f.input :photo_cache, as: :hidden %>
+          <%= f.submit class: 'btn btn-cocktails-1' %>
+        <% end %>
+      </div>
     </div>
+
+    <%= link_to "Back to Cocktails list", cocktails_path %>
+
   </div>
-  <%= link_to "Back to Cocktails list", cocktails_path %>
 </div>
