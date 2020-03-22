@@ -1,6 +1,9 @@
-<h1><%= @cocktail.name.capitalize  %></h1>
-<%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
-
+<div id="show-cocktail" class="show-cocktail">
+  <h1><%= @cocktail.name.capitalize  %></h1>
+</div>
+<div id="img-cocktail" class="img-cocktail">
+  <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
+</div>
 <ul>
 <%  @cocktail.doses.each do |dose| %>
   <li><%= dose.ingredient.name %></li>
@@ -10,7 +13,7 @@
 </ul>
 <br />
 <br />
-<p><%= link_to 'Add ingredient', new_cocktail_dose_path(@cocktail) %></p>
+<!-- <p><%= link_to 'Add ingredient', new_cocktail_dose_path(@cocktail) %></p> -->
 
 
 <p><%= link_to 'Edit', edit_cocktail_path(@cocktail) %></p>
