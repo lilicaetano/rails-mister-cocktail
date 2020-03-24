@@ -10,12 +10,22 @@
     <table class="table table-bordered">
       <tbody>
         <thead>
-          <th>Quantity</th>
-          <th>Ingredients</th>
+          <th>Dose</th>
+          <th>Ingredient</th>
         </thead>
+        <% @cocktail.doses.each do |dose| %>
+            <tr>
+            <td><%= dose.description %></td>
+              <td><%= dose.ingredient.name %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
       </tbody>
     </table>
-    <p><%= link_to 'Edit', edit_cocktail_path(@cocktail) %></p>
+  <p><%= link_to 'Edit', edit_cocktail_path(@cocktail) %></p>
   </div>
 </div>
 
@@ -45,4 +55,6 @@
 <br />
 <br />
 <!-- <p><%= link_to 'Add ingredient', new_cocktail_dose_path(@cocktail) %></p> -->
-<p><%= link_to 'Back to list', cocktails_path %></p>
+<div class="back-link">
+  <%= link_to "← Back to list", cocktails_path %>
+</div>

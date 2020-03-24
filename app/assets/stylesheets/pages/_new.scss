@@ -37,3 +37,16 @@
   color: white;
   transform: scale(1.02);
 }
+
+.back-link {
+  margin: 3rem 5rem;
+}
+
+.back-link a {
+  text-decoration: none;
+  color: #6F1323;
+}
+
+.back-link a:hover {
+  font-weight: bold;
+}
