@@ -7,7 +7,7 @@
         <div class="description">
           <%= simple_form_for @cocktail do |f| %>
             <%= f.input :name %>
-            <%= f.input :ingredients %>
+            <%= f.association :ingredients, input_html: { class: "beautiful-dropdown" }, include_hidden: false %>
             <%= f.input :photo %>
             <%= f.input :photo_cache, as: :hidden %>
             <%= f.submit class: 'btn btn-cocktails-2' %>
@@ -15,8 +15,6 @@
         </div>  
       </div>
     </div>
-  
-    <%= link_to "Back to Cocktails list", cocktails_path %>
-
   </div>
+  <%= link_to "Back to list", cocktails_path %>
 </div>

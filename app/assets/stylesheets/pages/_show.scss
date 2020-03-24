@@ -6,6 +6,40 @@
   text-align: center;
 }
 
-.img-cocktail {
+.cocktail-card-recipe {
   text-align: center;
+}
+
+.cocktail-card-recipe {
+  overflow: hidden;
+  height: 300px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  margin: 5rem 5rem;
+}
+
+.cocktail-card-recipe img {
+  height: 100%;
+  width: 400px;
+  object-fit: cover;
+}
+
+.cocktail-card-recipe h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.cocktail-card-recipe th {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.cocktail-card-recipe .cocktail-card-infos {
+  padding: 16px;
 }
