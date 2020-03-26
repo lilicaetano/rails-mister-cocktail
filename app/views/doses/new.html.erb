@@ -1,0 +1,18 @@
+<div class="navbar">
+  <a><%= link_to "The Mixologist", cocktails_path %></a>
+</div>
+
+
+<div class="add-ingredient">
+  <h1 class="text-center">Add an ingredient to <%= @cocktail.name %></h1>
+  <%= render "form" %>
+</div>
+
+<div class="back-link">
+  <button onclick="goBack()">← Back</button>
+  <script>
+  function goBack() {
+    window.history.back();
+  }
+  </script>
+</div>  

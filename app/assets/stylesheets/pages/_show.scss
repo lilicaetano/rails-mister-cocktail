@@ -79,6 +79,15 @@
   margin-top: 8px;
 }
 
+.cocktail-card-recipe i {
+  color: grey;
+}
+
+.cocktail-card-recipe i:hover {
+  color: black;
+  transform: scale(1.02);
+}
+
 .cocktail-card-recipe .cocktail-card-infos {
   padding: 16px;
 }

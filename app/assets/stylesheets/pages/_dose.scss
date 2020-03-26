@@ -1,4 +1,4 @@
-.new-cocktail {
+.add-ingredient {
   background-color: white;
   color: black;
   font-size: 20px;
@@ -6,16 +6,15 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   margin: 5rem 5rem 5rem 5rem;
 }
-.new-cocktail h1 {
+.add-ingredient h1 {
   color: #6F1323;
   font-family: 'Great Vibes', cursive;
   font-size: 52px;
   text-align: center;
   padding-top: 2rem;
-  
 }
 
-.description label {
+.add-ingredient label {
   font-family: 'PT Serif', serif;
   font-size: 18px;
   color: black;
@@ -23,7 +22,7 @@
   margin-top: 2rem;
 }
 
-.description input {
+.add-ingredient input {
   display: block;
   width: 80%;
   height: 36px;
@@ -33,7 +32,7 @@
   margin-left: 5rem;
 }
 
-.description textarea {
+.add-ingredient textarea {
   display: block;
   width: 80%;
   height: 36px;
@@ -41,35 +40,19 @@
   font-size: 16px;
   line-height: 1.4;
   margin-left: 5rem;
-}
-
-.btn-cocktails-2 {
-  color: white;
-  background: linear-gradient(#6F1323, rgb(77, 13, 23));
-  border: 0px;
-  justify-content: center;
-  padding: 8px 24px;
-  border-radius: 5px;
-  font-family: 'PT Serif', serif;
-  transition: transform 0.3s ease;
-  margin-bottom: 2rem;
-}
-
-.btn-cocktails-2:hover {
-  font-weight: bold;
-  color: white;
-  transform: scale(1.02);
 }
 
 .back-link {
   margin: 3rem 5rem;
 }
 
-.back-link a {
+.back-link button {
   text-decoration: none;
+  background: none;
+  border: unset;
   color: #6F1323;
 }
 
-.back-link a:hover {
+.back-link button:hover {
   font-weight: bold;
 }

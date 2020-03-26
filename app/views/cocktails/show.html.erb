@@ -33,7 +33,7 @@
         </tbody>
       </table>
       <div>
-        <a><%= link_to 'Edit', new_cocktail_path, class: "btn btn-cocktails"%></a>
+        <a><%= link_to 'Edit', new_cocktail_dose_path(@cocktail), class: "btn btn-cocktails"%></a>
         <a><%= link_to "Delete", cocktail_path(@cocktail), method: :delete, class: "btn btn-cocktails" %></a>
       </div>
   </div>

@@ -2,23 +2,16 @@
   <a><%= link_to "The Mixologist", cocktails_path %></a>
 </div>
 
-<div id="new-cocktail" class="new-cocktail">
-  <h1>Create a new cocktail</h1>
-
-  <div class="create-new-cocktail container">
-    <div class="col-sm-12 col-md-6">
-      <div class="description">
-        <%= simple_form_for @cocktail do |f| %>
-          <%= f.input :name %>
-          <%= f.input :description %>
-          <%= f.input :photo %>
-          <%= f.input :photo_cache, as: :hidden %>
-          <%= f.submit class: 'btn btn-cocktails-2' %>
-        <% end %>
-      </div>
-    </div>
-    <div class="cocktail-img">
-      <img srcset="https://res.cloudinary.com/dwhyp7x92/image/upload/v1584880701/Mister%20Cocktail/new-cocktail_qqbc65.png" alt="Cocktails"/>  
+  <div class="new-cocktail">
+    <h1>Create a new cocktail</h1>
+    <div class="description">
+      <%= simple_form_for @cocktail do |f| %>
+        <%= f.input :name %>
+        <%= f.input :description %>
+        <%= f.input :photo %>
+        <%= f.input :photo_cache, as: :hidden %>
+        <%= f.submit class: 'btn btn-cocktails-2' %>
+      <% end %>
     </div>
   </div>
   <div class="back-link">
