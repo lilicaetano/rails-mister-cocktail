@@ -1,19 +1,17 @@
-<div id="show-cocktail" class="show-cocktail">
-  <h1><%= @cocktail.name.capitalize  %></h1>
+<div class="navbar">
+  <a><%= link_to "The Mixologist", cocktails_path %></a>
 </div>
 
 <div class="cocktail-card-recipe">
-  <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
+  <%= cl_image_tag @cocktail.photo %>
   
-  <div class="row">
-    <div class="col-sm-12 col-md-6">
+  <div class="col-sm-12 col-md-6">
 
+    <h1><%= @cocktail.name.capitalize  %></h1>
+
+    <p><%= @cocktail.description %></p>
     
-    <h3>Description</h3>
-      <p><%= @cocktail.description %></p>
-      <%= link_to "Delete", cocktail_path(@cocktail), method: :delete, class: "btn btn-danger" %>
-    
-      <h3>Recipe</h3>
+    <h2>Recipe</h2>
       <table class="table table-bordered">
         <tbody>
           <thead>
@@ -34,10 +32,10 @@
           <% end %>
         </tbody>
       </table>
-    </div>
-    <div class="col-sm-12 col-md-6">
-      <%= render "doses/new", cocktail: @cocktail, dose: @dose %>
-    </div>
+      <div>
+        <a><%= link_to 'Edit', new_cocktail_path, class: "btn btn-cocktails"%></a>
+        <a><%= link_to "Delete", cocktail_path(@cocktail), method: :delete, class: "btn btn-cocktails" %></a>
+      </div>
   </div>
 </div>
 

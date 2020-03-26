@@ -1,0 +1,7 @@
+<div class="navbar">
+  <a><%= link_to "The Mixologist", cocktails_path %></a>
+</div>
+
+<div class="col-sm-12 col-md-6">
+    <%= render "doses/new", cocktail: @cocktail, dose: @dose %>
+  </div>
