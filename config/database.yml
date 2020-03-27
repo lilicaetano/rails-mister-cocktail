@@ -10,3 +10,7 @@ development:
 test:
   <<: *default
   database: rails-mister-cocktail_test
+
+production:
+  <<: *default
+  database: rails-mister-cocktail_production
