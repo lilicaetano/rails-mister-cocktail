@@ -4,42 +4,41 @@
   font-size: 20px;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  margin: 5rem 5rem 5rem 5rem;
+  margin: 4rem 5rem 4rem 5rem;
 }
 .add-ingredient h1 {
   color: #6F1323;
   font-family: 'Great Vibes', cursive;
   font-size: 52px;
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 5.5rem; 
 }
 
-.add-ingredient label {
+.description-1 {
+  width: 80%;
+  height: 23rem;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.4;
+  margin-left: 5rem;
+}
+
+.description-1 label {
   font-family: 'PT Serif', serif;
   font-size: 18px;
   color: black;
-  margin-left: 5rem;
+  margin-left: 3.5rem;
   margin-top: 2rem;
 }
 
-.add-ingredient input {
-  display: block;
-  width: 80%;
-  height: 36px;
-  padding: 6px 12px;
-  font-size: 16px;
-  line-height: 1.4;
-  margin-left: 5rem;
+.description-1 input {
+  width: 100%;
+  margin-left: 3.5rem;
 }
 
-.add-ingredient textarea {
-  display: block;
-  width: 80%;
-  height: 36px;
-  padding: 6px 12px;
-  font-size: 16px;
-  line-height: 1.4;
-  margin-left: 5rem;
+.description-1 textarea {
+  width: 100%;
+  margin-left: 3.5rem;
 }
 
 .back-link {

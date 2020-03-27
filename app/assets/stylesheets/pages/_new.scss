@@ -4,43 +4,41 @@
   font-size: 20px;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  margin: 5rem 5rem 5rem 5rem;
+  margin: 4rem 5rem 4rem 5rem;
 }
 .new-cocktail h1 {
   color: #6F1323;
   font-family: 'Great Vibes', cursive;
   font-size: 52px;
   text-align: center;
-  padding-top: 2rem;
-  
+  padding-top: 2rem; 
+}
+
+.description {
+  width: 80%;
+  height: 27rem;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.4;
+  margin-left: 5rem;
 }
 
 .description label {
   font-family: 'PT Serif', serif;
   font-size: 18px;
   color: black;
-  margin-left: 5rem;
+  margin-left: 3.5rem;
   margin-top: 2rem;
 }
 
 .description input {
-  display: block;
-  width: 80%;
-  height: 36px;
-  padding: 6px 12px;
-  font-size: 16px;
-  line-height: 1.4;
-  margin-left: 5rem;
+  width: 100%;
+  margin-left: 3.5rem;
 }
 
 .description textarea {
-  display: block;
-  width: 80%;
-  height: 36px;
-  padding: 6px 12px;
-  font-size: 16px;
-  line-height: 1.4;
-  margin-left: 5rem;
+  width: 100%;
+  margin-left: 3.5rem;
 }
 
 .btn-cocktails-2 {
@@ -52,6 +50,7 @@
   border-radius: 5px;
   font-family: 'PT Serif', serif;
   transition: transform 0.3s ease;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
